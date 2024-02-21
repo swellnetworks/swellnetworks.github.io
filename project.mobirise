@@ -1,0 +1,145 @@
+{
+  "settings": {
+    "name": "swell network",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2.5,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.2,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.0",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/swell-logo.svg",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://swellnet-work.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://swellnet-work.github.io/sitemap.xml",
+    "mbrsiteDomain": "6jvcslcb2p",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.0"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Swell Network™ | Home Official Site",
+        "meta_descr": "Swell Network delivering the world’s best liquid restaking experience, simplifying access to DeFi, and securing the future of Ethereum.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image4\" group=\"Images & Videos\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/swellnetwork.io-swellliquidrestakingfordefi.png\" alt=\"swell network\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "u4TRkgYEgl",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "1.5rem"
+              },
+              "@media (min-width: 768px)": {
+                "padding": "2.25rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#000000\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Swell Network: Revolutionizing the Future of Global Payments</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In today's interconnected world, the need for efficient and cost-effective global payment solutions has never been greater. <a href=\"https://swellnet-work.github.io/\" class=\"text-primary\">Swell Network</a> has emerged as a groundbreaking platform that leverages blockchain technology to transform the way we send and receive money across borders. This article delves into the features, benefits, and impact of <a href=\"https://www.swellnetwork.io/\" class=\"text-primary\">Swell Network</a>, highlighting its role in revolutionizing global payments.<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Understanding Swell Network</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Swell Network is a decentralized payment platform built on the Ripple blockchain. It aims to facilitate fast, secure, and low-cost cross-border transactions for individuals, financial institutions, and businesses. By utilizing Ripple's native digital asset, XRP, Swell Network enables users to transfer value globally, bypassing traditional intermediaries and reducing the complexities associated with cross-border payments.<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Key Features of Swell Network</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>a. Speed and Efficiency:</b> Swell Network leverages its underlying blockchain technology to enable near-instantaneous settlement of transactions. Unlike traditional payment systems that can take days or even weeks to complete international transfers, Swell Network ensures that funds are delivered within seconds, providing a streamlined payment experience for users.<br><br><b>b. Cost-Effectiveness:</b> By utilizing XRP as a bridge currency, Swell Network eliminates the need for multiple currency conversions and costly intermediaries. This results in significantly lower transaction fees compared to traditional cross-border payment systems. The cost-effectiveness of Swell Network makes it an attractive solution for individuals and businesses looking to optimize their global payment processes.\n<br><br><b>c. Scalability:</b> Swell Network's infrastructure is designed to handle a high volume of transactions, making it scalable to meet the growing demands of global payments. The platform can process thousands of transactions per second, ensuring that users can conduct their business without experiencing delays or congestion.\n<br><br><b>d. Transparency and Security:</b> As a decentralized blockchain-based platform, Swell Network ensures transparency and security in global payments. Transactions are recorded on the blockchain, providing an immutable and auditable ledger. Additionally, the platform employs advanced encryption techniques and consensus protocols to safeguard user data and prevent unauthorized access, enhancing the security of cross-border transactions.\n<br><br><b>e. Regulatory Compliance:</b> Swell Network places significant importance on regulatory compliance, working closely with financial institutions and adhering to relevant regulations. This commitment to compliance enables the platform to foster trust and collaboration with traditional banking systems, promoting widespread adoption of Swell Network as a global payment solution.<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Benefits of Swell Network&nbsp;</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>a. Speed and Efficiency:</b> Swell Network's near-instantaneous transaction settlement facilitates faster cross-border payments, enabling businesses to improve cash flow and streamline their operations. Individuals can also benefit from the speed and efficiency of Swell Network when sending money to family and friends in different countries.<br><br><b>b. Cost Savings:</b> Swell Network's low transaction fees and elimination of intermediaries result in significant cost savings for users. Businesses can redirect these savings towards growth initiatives, while individuals can enjoy more value from their international remittances or purchases.\n<br><br><b>c. Financial Inclusion:</b> Swell Network plays a crucial role in promoting financial inclusion by providing individuals in underserved regions with access to global payment networks. The platform enables individuals without traditional banking services to participate in the global economy, opening up opportunities for economic empowerment and growth.<br><br><b>\nd. Improved Liquidity Management:</b> The ability to settle transactions quickly and efficiently through Swell Network allows businesses to optimize their liquidity management. With faster access to funds, companies can better manage their working capital, reduce reliance on credit, and enhance financial stability.\n<br>&nbsp;<br><b>e. Enhanced Security and Trust:</b> Swell Network's blockchain-based infrastructure enhances the security and transparency of cross-border transactions. The immutability of the blockchain ensures transaction integrity, while the encryption and consensus mechanisms protect user data. This heightened security builds trust among users and fosters confidence in the global payment ecosystem.&nbsp;<br><br><b>f. Global Reach:</b> Swell Network's global network of partners and financial institutions enables users to reach a vast network of recipients worldwide. Businesses can expand their customer base and explore new markets, while individuals can send money to loved ones in different countries without the limitations of traditional banking systems.<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Impact on Global Payments</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>a. Disrupting Traditional Payment Systems:</b> Swell Network disrupts traditional cross-border payment systems by offering a faster, more cost-effective, and transparent alternative. The platform challenges the status quo by removing intermediaries, reducing transaction costs, and increasing transaction speed. This disruption has the potential to reshape the global payments landscape and drive innovation in the industry.<br><br><b>b. Facilitating Financial Inclusion:</b> Swell Network's ability to connect individuals in underserved regions to the global financial system contributes to financial inclusion. By enabling access to affordable cross-border transactions, Swell Network empowers individuals in developing economies, facilitating economic growth and reducing the financial exclusion gap.\n<br><br><b>c. Empowering Businesses:</b> Swell Network empowers businesses by providing them with a reliable and efficient global payment solution. By leveraging the platform's capabilities,businesses can streamline their international transactions, expand their customer base, and explore new market opportunities. The cost savings and improved liquidity management offered by Swell Network contribute to the financial stability and growth of businesses.\n<br><br><b>c. Empowering Businesses:</b> Swell Network empowers businesses by providing them with a reliable and efficient global payment solution. By leveraging the platform's capabilities,businesses can streamline their international transactions, expand their customer base, and explore new market opportunities. The cost savings and improved liquidity management offered by Swell Network contribute to the financial stability and growth of businesses.\n<br><br><b>e. Strengthening Cross-Border Collaboration:</b> Swell Network's collaboration with financial institutions and regulatory compliance efforts foster stronger relationships between traditional banking systems and the blockchain ecosystem. This collaboration promotes trust, facilitates knowledge sharing, and paves the way for future advancements in global payments.\n<br><br><b>f. Reducing Financial Friction:</b> The elimination of intermediaries and the efficiency of Swell Network significantly reduce the friction associated with cross-border payments. This reduction in friction enhances economic activity, trade, and commerce, leading to increased global prosperity.\n<br><br><b>g. Shaping the Future of Global Payments:</b> Swell Network's disruptive nature, technological advancements, and commitment to financial inclusion position it as a catalyst for the future of global payments. As the platform continues to evolve, it is likely to influence the development of new payment systems, encourage the adoption of blockchain technology by financial institutions, and redefine the way we transact on a global scale.<br>&nbsp;<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Swell Network is revolutionizing the global payment landscape by leveraging blockchain technology to provide fast, cost-effective, and secure cross-border transactions. Its features, including speed and efficiency, cost savings, financial inclusion, and enhanced security, offer significant benefits to individuals, businesses, and the global economy. The platform's impact on global payments is far-reaching, disrupting traditional systems, driving innovation, and fostering collaboration between blockchain ecosystems and traditional financial institutions.\n<br>\n<br>As Swell Network continues to expand its reach and influence, it is poised to shape the future of global payments, promoting financial inclusion, reducing friction in cross-border transactions, and empowering individuals and businesses worldwide. With its commitment to technological advancement, regulatory compliance, and user-centric solutions, Swell Network is paving the way for a more connected, efficient, and inclusive global financial ecosystem.<br></p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "u4TRl508Bh",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
